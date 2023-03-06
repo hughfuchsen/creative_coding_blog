@@ -10,7 +10,7 @@ blog({
   // footer: <footer>Your custom footer</footer>,
   avatar: "images/bballtest2.gif",
   avatarClass: "rounded-full",
-  author: "An author",
+  author: "Hugh Fuchsen",
 
   // middlewares: [
 
