@@ -24,6 +24,6 @@ This here, is an image:
 
 ![me in an image](./images/IMG_1153.jpg)
 > block quote?
-'''js
+```js
 let = 'this is code block'
-'''
+```
