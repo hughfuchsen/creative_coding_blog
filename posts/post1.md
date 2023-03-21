@@ -28,4 +28,3 @@ This here, is an image:
 let = 'this is code block'
 ```
 
-<iframe src="https://editor.p5js.org/capogreco/full/tg2BVPSKS"></iframe>
