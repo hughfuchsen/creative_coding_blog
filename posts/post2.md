@@ -3,7 +3,7 @@ title: ears
 publish_date: 2023-03-27
 disable_html_sanitization: true
 --- 
-<font size="8">m</font><font size="5">y strengths lie in making melodies over musical chord progressions. singing melodies is a form of catharsis for me that i would absolutely go off the rails without. a biproduct of singing in order to relax is that i have developed a taste for the tone and form of melodies that could inform what is being communicated through music. of course, this is entirely subjective, but it fuels my creative urges to compose both lyrical folk music and instrumental video game soundtracks.
+<font size="8">m</font><font size="5">y strengths lie in making melodies over musical chord progressions. singing melodies is a form of catharsis for me that i would absolutely go off the rails without. a biproduct of singing in order to relax is that i have developed a taste for the tone and form of melodies that could inform what is being communicated through music. of course, this is entirely subjective, but it fuels my creative drive to compose both lyrical folk music and instrumental video game soundtracks.
 
 **some of my favourite singers:**
 - _ aldous harding
@@ -13,12 +13,19 @@ disable_html_sanitization: true
 - _ chet baker
 - _ deep forest (weird forest nymph voice)
 - _ paul mccartney
+- _ bjork
 - _ mason ramsay (yodeling walmart kid)
+
+> "the only thing better than singing is more singing." - ella fitzgerald
 
 **some of my favourite video game sountracks:**
 - _ super mario sixty-four
 - _ all of the games mentioned in my 'introduction to two-dimensional worlds' blog
-- _ 
+
+<iframe width="560" height="40" src="https://www.youtube.com/embed/wj6eoK5fVGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+**this is a taste of some of my own music:**
+
 
 
 ◡̈
