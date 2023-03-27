@@ -19,7 +19,7 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 - frequently travelling through the united states, touring with music and visiting family
 - visiting japan as much as i can
 - (<span style="green">*the legend of zelda: a link to the past*</span>)
-- (<span style="color:yellow">*pokemon yellow*</span>) 
+- (<span style="color:#FFC000">*pokemon yellow*</span>) 
 - (<span style="color:skyblue">*hyper light drifter*</span>)
 - (<span style="color:red">*piku niku*</span>)
 - (<span style="color:pink">*untitled goose*<span>)
