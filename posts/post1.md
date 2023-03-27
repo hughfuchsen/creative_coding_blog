@@ -20,6 +20,7 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 - (*hyper light drifter*)
 - (*piku niku*)
 - (*untitled goose*)
+
 **farming** 
 - raising cattle
 - fixing stuff
@@ -27,6 +28,7 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 - shovelling stuff
 - etc
 - (*stardew valley*)
+
 **running a family bed and breakfast** 
 - cleaning
 - relationships with new people all the time
@@ -35,7 +37,7 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 
 - the list elaborates and goes on.
 
-by reading the above list, one can correctly assume that i have cultivated an affinity for isometric art. isometric art is a drawing or illustration style that makes two-dimensional figures appear three dimensional. in a three dimensional game design such as *untitled goose*, *the sims* and *animal crossing* the concept of isometric art remains, as any point-perspective in the three-d art is eliminated. growing up with limited access to video games, i started out just (mostly) playing old-school titles that did not belong to three-d platforms like the *nintendo sixty-four*. as much as i love and appreciate playing three-d games, my current drive to create isometric worlds comes from this limitation that i was presented with as a smaller boy. 
+by reading the above list, one can correctly assume that i have cultivated an affinity for isometric art. isometric art is a drawing or illustration style that makes two-dimensional figures appear three dimensional. in a three dimensional game design such as *untitled goose*, *the sims* and *animal crossing*, the concept of isometric art remains, as any point-perspective in the three-d art is eliminated. growing up with limited access to video games, i started out just (mostly) playing old-school titles that did not belong to three-d platforms like the *nintendo sixty-four*. as much as i love and appreciate playing three-d games, my current drive to create isometric worlds comes from this limitation that i was presented with as a smaller boy. 
 
 so that is a glimpse of seed that germinated into my passion for the gargantuan pursuit of game design. 
 
