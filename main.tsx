@@ -3,14 +3,14 @@
 import blog, { ga, redirects, h } from "blog";
 
 blog({
-  title: "Hugh F's Creative Coding Blog",
-  description: "This is my new blog about creative coding :^)!!!!!!",
+  title: "hugh f's creative coding blog",
+  description: "this is my new blog about creative coding :^)!!!!!!",
   // header: <header>Your custom header</header>,
   // section: <section>Your custom section</section>,
   // footer: <footer>Your custom footer</footer>,
   avatar: "./images/IMG_1153.jpg",
   avatarClass: "rounded-full",
-  author: "Hugh Fuchsen",
+  author: "hugh fuchsen",
 
   // middlewares: [
 
