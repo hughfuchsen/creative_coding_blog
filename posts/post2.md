@@ -3,12 +3,12 @@ title: ears
 publish_date: 2023-03-27
 disable_html_sanitization: true
 --- 
-<font size="8">m</font><font size="5">y strengths lie in making melodies over musical chord progressions. singing melodies is a form of catharsis for me that i would absolutely go off the rails without. a biproduct of singing in order to relax is that i have developed a taste for the tone and forms of melodies that could inform what being communicated through the music. of course, this is entirely subjective, but it fuels my creative urges to compose both lyrical folk music and instrumental video game soundtracks.
+<font size="8">m</font><font size="5">y strengths lie in making melodies over musical chord progressions. singing melodies is a form of catharsis for me that i would absolutely go off the rails without. a biproduct of singing in order to relax is that i have developed a taste for the tone and form of melodies that could inform what is being communicated through music. of course, this is entirely subjective, but it fuels my creative urges to compose both lyrical folk music and instrumental video game soundtracks.
 
 **some of my favourite singers:**
-- _ aldous Harding
-- _ ella Fitzgerald
-- _ buck Owens
+- _ aldous harding
+- _ ella fitzgerald
+- _ buck owens
 - _ sarah vaughan
 - _ chet baker
 - _ deep forest (weird forest nymph voice)
