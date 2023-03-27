@@ -16,7 +16,7 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 **open world adventures**
 - _ frequently travelling through the united states, touring with music and visiting family
 - _ visiting japan as much as i can
-- _ (<span style="green">*the legend of zelda: a link to the past*</span>)
+- _ (<span style="color:green">*the legend of zelda: a link to the past*</span>)
 - _ (<span style="color:#FFC000">*pokemon yellow*</span>) 
 - _ (<span style="color:skyblue">*hyper light drifter*</span>)
 - _ (<span style="color:red">*piku niku*</span>)
