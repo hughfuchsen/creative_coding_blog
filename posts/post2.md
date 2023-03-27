@@ -24,9 +24,18 @@ disable_html_sanitization: true
 
 <iframe width="560" height="40" src="https://www.youtube.com/embed/wj6eoK5fVGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**this is a taste of some of my own music:**
+**some of my folk music:**
 
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2844226812/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3427476574/transparent=true/" seamless><a href="https://hughfuchsen.bandcamp.com/album/do-you-have-a-minute">Do You Have a Minute? by Hugh F</a></iframe>
 
+**some of my game soundtrack music:**
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1591387816%3Fsecret_token%3Ds-YjJj6xJsb3v&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hughfuchsen" title="Hugh F" target="_blank" style="color: #cccccc; text-decoration: none;">Hugh F</a> · <a href="https://soundcloud.com/hughfuchsen/sets/cc1/s-YjJj6xJsb3v" title="CC1" target="_blank" style="color: #cccccc; text-decoration: none;">CC1</a></div>
+
+**adaptive soundtrack aspirations**
+videogames with adaptive soundtracks have always fascinated me, so i love doing the same thing with my own music. something as simple as adding a drumbeat onto the song when you enter a new area in the game is so effective in utilising the same song, yet presenting a whole extra layer of art direction. the two soundcloud tracks are examples of an adaptive soundtrack i am working on. 
+
+the challenge for me is figuring out a way to program this into my game designs, as i am yet to do it. 
 
 ◡̈
 --- 
