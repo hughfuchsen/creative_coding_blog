@@ -7,7 +7,7 @@ disable_html_sanitization: true
 
 # my introduction to two-dimensional worlds
 --- 
-as a small child, i always enjoyed sitting in awe over my older brother's shoulder while he figured out how to play  *super mario land two: six golden coins* on his recently acquired, *nintendo gambeboy*. my mind - along with the minds of many of other youngins - was completely blown by the beautiful and evocative art of video game design. growing up in a farming family as the youngest of four, the concept of an entire world being programmed behind a pixelated screen the size of my mum's nursing pager was often met with belittlement as i was sent outside to fix the cattle-troph leak for the thirteenth time that summer. 
+as a small child, i always enjoyed sitting in awe over my older brother's shoulder while he figured out how to play <span style="color:sky-blue">*super mario land two: six golden coins*</span> on his recently acquired, *nintendo gambeboy*. my mind - along with the minds of many of other youngins - was completely blown by the beautiful and evocative art of video game design. growing up in a farming family as the youngest of four, the concept of an entire world being programmed behind a pixelated screen the size of my mum's nursing pager was often met with belittlement as i was sent outside to fix the cattle-troph leak for the thirteenth time that summer. 
 
 <iframe width="560" height="40" src="https://www.youtube.com/embed/Cfw85wT13Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
