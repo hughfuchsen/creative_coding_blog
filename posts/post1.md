@@ -48,7 +48,7 @@ so that is a glimpse of the seed that germinated into my passion for the gargant
 
 **an online farm simulator**
 
-recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator. the main thing i love about it is the satisfaction of automating the farming process and discovering new items as you go. 
+recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator made with <span style="color:orange">*p5.js*</span>. the main thing i love about the game is the satisfaction of automating the farming process and discovering new items as you go. 
 
 a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
 
@@ -57,6 +57,12 @@ a really frustrating part of the game is the fact that you need to drag and drop
 here is a simple p5 example of dragging and dropping. 
 
 <iframe width="500" height="543" src="https://editor.p5js.org/le_4TC/full/5Iuaw19Z7"></iframe>
+
+here is a runthrough of what is going on in the drag-n-drop code.
+
+`
+hello
+`
 
 --- 
 </font>
