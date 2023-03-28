@@ -60,8 +60,66 @@ here is a simple p5 example of dragging and dropping.
 
 here is a runthrough of what is going on in the drag-n-drop code.
 
-`
-hello
+`js
+class Circle {
+  constructor(x,y,r) {
+    this.p = createVector(x,y)
+    this.r = r
+  }
+  
+  draw() {
+    circle(this.p.x, this.p.y, this.r)
+  }
+  
+}
+
+function setup() {
+  hover = null
+  grabbed = null
+  d = 500
+  createCanvas(d, d)
+  ellipseMode(RADIUS)
+  circles = []
+  for (let i = 0; i < 3; i ++) {
+    circles.push(new Circle(random(width), random(height), random(10,50)))
+  }
+}
+
+function draw() {
+  m = createVector(mouseX, mouseY)
+  hover = null
+  for (let c of circles) {
+    if (m.dist(c.p) < c.r) {
+      hover = c
+    }
+  }
+  background('white')
+  noStroke()
+  if (hover) cursor('grab')
+  else cursor(ARROW)
+  for (let c of circles) {
+    if (c == grabbed) fill(50)
+    else if (c == hover) fill(100)
+    else fill(0)
+    c.draw()
+  }
+}
+
+function mousePressed() {
+  if (hover) {
+    grabbed = hover
+  }
+}
+
+function mouseReleased() {
+  grabbed = null
+}
+
+function mouseDragged() {
+  if (grabbed) {
+    grabbed.p.add(createVector(movedX, movedY))
+  }
+}
 `
 
 --- 
