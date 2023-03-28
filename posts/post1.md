@@ -101,9 +101,10 @@ function draw() {
   background('white')
 // this makes the circles have no outline  
   noStroke()
-// this condotional method is used to check whether the cursor/mouse is   
+// this condotional method is used to change the display of the cursor   
   if (hover) cursor('grab')
   else cursor(ARROW)
+// this for loop   
   for (let c of circles) {
     if (c == grabbed) fill(50)
     else if (c == hover) fill(100)
