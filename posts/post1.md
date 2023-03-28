@@ -63,24 +63,34 @@ here is a // runthrough of what is going on in the drag-n-drop code.
 ```js
 // defining class as Circle
 class Circle {
-// the constuctor creates and initializes an object instance of the class, Circle
+// the constuctor creates and initializes 
+// an object instance of the class, Circle
   constructor(x,y,r) {
     this.p = createVector(x,y)
     this.r = r
   }
-// the draw method uses parametres from the constructor in order to creat a cirlce on the canvas
+// the draw method uses parametres from 
+// the constructor in order to creat a 
+// cirlce on the canvas
   draw() {
     circle(this.p.x, this.p.y, this.r)
   }
   
 }
-// the setup function is used to define initial properties of the program 
-// when it begins
+// the setup function is used to 
+// define initial properties 
+// of the program when it begins
 function setup() {
+// variables hover and grabbed will conditionally
+// inform the mouse functions, mousePressed(),
+// mouseReleased(), and mouseDragged().
+// this then updates the conditional
+// satatements in the draw() function    
   hover = null
   grabbed = null
   d = 500
-// this creates a canvas with height and width being d -> 500px  
+// this creates a canvas with height 
+// and width being d -> 500px  
   createCanvas(d, d)
   ellipseMode(RADIUS)
   circles = []
@@ -88,10 +98,14 @@ function setup() {
     circles.push(new Circle(random(width), random(height), random(10,50)))
   }
 }
-// the draw function perpetually loops the lines of code that is inside the function's block
+// the draw function perpetually loops the 
+// lines of code that is inside the 
+// function's block
 function draw() {
   m = createVector(mouseX, mouseY)
   hover = null
+// this for loop checks whether the mouse is
+// inside the circle's radius
   for (let c of circles) {
     if (m.dist(c.p) < c.r) {
       hover = c
@@ -101,10 +115,13 @@ function draw() {
   background('white')
 // this makes the circles have no outline  
   noStroke()
-// this condotional method is used to change the display of the cursor   
+// this condotional method is used 
+// to change the display of the cursor   
+// when the circle is interacted with
   if (hover) cursor('grab')
   else cursor(ARROW)
-// this for loop   
+// this for loop draws a grey circle, making it look 
+// like a circle has been grabbed when the mouse clicks
   for (let c of circles) {
     if (c == grabbed) fill(50)
     else if (c == hover) fill(100)
@@ -112,7 +129,12 @@ function draw() {
     c.draw()
   }
 }
-
+// functions, mousePressed(),
+// mouseReleased(), and mouseDragged()
+// update the conditional
+// satatements in the draw() function
+// with the use of the hover and 
+// grabbed variables
 function mousePressed() {
   if (hover) {
     grabbed = hover
