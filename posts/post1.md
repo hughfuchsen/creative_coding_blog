@@ -45,5 +45,13 @@ i am immensely grateful to have experienced a versatile first twenty-eight years
 by reading the above list, one can correctly assume that i have cultivated an affinity for isometric art. isometric art is a drawing or illustration style that makes two-dimensional figures appear three dimensional. in three dimensional game designs such as <span style="color:pink">*untitled goose*</span>, <span style="color:orange">*the sims*</span> and <span style="color:blue">*animal crossing*</span>, the concept of isometric art remains, as any point-perspective in the three-d art is eliminated. growing up with limited access to video games, i started out just (mostly) playing old-school titles that did not belong to three-d platforms like the <span style="color:red">*nintendo sixty-four*</span>. as much as i love and appreciate playing three-d games, my current drive to create isometric worlds comes from this limitation that i was presented with as a smaller boy. 
 
 so that is a glimpse of the seed that germinated into my passion for the gargantuan pursuit of game design. ◡̈
+
+**an online farm simulator**
+recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator. the main thing i love about it is the satisfaction of automating the farming process and discovering new items as you go. a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
+
+here is a simple p5 example of dragging and dropping. 
+
+
+
 --- 
 </font>
