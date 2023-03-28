@@ -48,7 +48,7 @@ so that is a glimpse of the seed that germinated into my passion for the gargant
 
 **an online farm simulator**
 
-recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator made with <span style="color:orange">*p5.js*</span>. the main thing i love about the game is the satisfaction of automating the farming process and discovering new items as you go. 
+recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator made with <span style="color:orange">*p5.js*</span>. the main thing i love about the game is the satisfaction of automating the farming process and discovering new items as you go, much like <span style="color:green">*stardew valley*</span>). 
 
 a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
 
@@ -58,21 +58,24 @@ here is a simple p5 example of dragging and dropping.
 
 <iframe width="500" height="543" src="https://editor.p5js.org/le_4TC/full/5Iuaw19Z7"></iframe>
 
-here is a runthrough of what is going on in the drag-n-drop code.
+here is a // runthrough of what is going on in the drag-n-drop code.
 
-`js
+```js
+// defining class as Circle
 class Circle {
+// the constuctor creates and initializes an object instance of the class, Circle
   constructor(x,y,r) {
     this.p = createVector(x,y)
     this.r = r
   }
-  
+// the draw method uses parametres from the constructor in order to creat a cirlce on the canvas
   draw() {
     circle(this.p.x, this.p.y, this.r)
   }
   
 }
-
+// the setup function is used to define initial properties of the program 
+// when it begins
 function setup() {
   hover = null
   grabbed = null
@@ -84,7 +87,7 @@ function setup() {
     circles.push(new Circle(random(width), random(height), random(10,50)))
   }
 }
-
+// 
 function draw() {
   m = createVector(mouseX, mouseY)
   hover = null
@@ -120,7 +123,7 @@ function mouseDragged() {
     grabbed.p.add(createVector(movedX, movedY))
   }
 }
-`
+```
 
 --- 
 </font>
