@@ -47,7 +47,12 @@ by reading the above list, one can correctly assume that i have cultivated an af
 so that is a glimpse of the seed that germinated into my passion for the gargantuan pursuit of game design. ◡̈
 
 **an online farm simulator**
-recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator. the main thing i love about it is the satisfaction of automating the farming process and discovering new items as you go. a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
+
+recently i came upon  <span style="color:orange">*florp farming*</span>, which is a drag-n-drop farm simulator. the main thing i love about it is the satisfaction of automating the farming process and discovering new items as you go. 
+
+a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
+
+![florp farming start page](./images/florp.png)
 
 here is a simple p5 example of dragging and dropping. 
 
