@@ -80,6 +80,7 @@ function setup() {
   hover = null
   grabbed = null
   d = 500
+// this creates a canvas with height and width being d -> 500px  
   createCanvas(d, d)
   ellipseMode(RADIUS)
   circles = []
@@ -87,7 +88,7 @@ function setup() {
     circles.push(new Circle(random(width), random(height), random(10,50)))
   }
 }
-// 
+// the draw function perpetually loops the lines of code that is inside the function's block
 function draw() {
   m = createVector(mouseX, mouseY)
   hover = null
@@ -96,8 +97,11 @@ function draw() {
       hover = c
     }
   }
+// this renders a white background  
   background('white')
+// this makes the circles have no outline  
   noStroke()
+// this condotional method is used to check whether the cursor/mouse is   
   if (hover) cursor('grab')
   else cursor(ARROW)
   for (let c of circles) {
