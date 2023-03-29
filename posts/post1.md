@@ -92,7 +92,17 @@ function setup() {
 // this creates a canvas with height 
 // and width being d -> 500px  
   createCanvas(d, d)
+// ellipseMode(x, y, r1, r2) uses the first two 
+// parameters as the x and y coordinates (centre). 
+// it uses the third and fourth parametres 
+// to determine the ellipse's width radius and
+// height radius respectively.
+// if drawing a circle, no fourth parametre is needed
   ellipseMode(RADIUS)
+// the array variable circles[] is used in 
+// the following for loop to initialise three 
+// circles of random x position, y position and 
+// random diameter between 10 and 50 px
   circles = []
   for (let i = 0; i < 3; i ++) {
     circles.push(new Circle(random(width), random(height), random(10,50)))
