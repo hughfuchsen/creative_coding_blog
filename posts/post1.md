@@ -56,7 +56,7 @@ a really frustrating part of the game is the fact that you need to drag and drop
 
 here is a simple p5 example of dragging and dropping. 
 
-<iframe width="500" height="543" src="https://editor.p5js.org/le_4TC/full/5Iuaw19Z7"></iframe>
+<iframe src="https://editor.p5js.org/le_4TC/full/5Iuaw19Z7"></iframe>
 
 here is a // runthrough of what is going on in the drag-n-drop code.
 
