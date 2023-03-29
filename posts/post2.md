@@ -1,6 +1,6 @@
 ---
 title: ears
-publish_date: 2023-03-27
+publish_date: 2023-03-28
 disable_html_sanitization: true
 --- 
 <font size="8">m</font><font size="5">y strengths lie in making melodies over musical chord progressions. singing melodies is a form of catharsis for me that i would absolutely go off the rails without... 
