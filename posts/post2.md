@@ -26,10 +26,13 @@ disable_html_sanitization: true
 
 **some of my folk music:**
 
+
 <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2844226812/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3427476574/transparent=true/" seamless><a href="https://hughfuchsen.bandcamp.com/album/do-you-have-a-minute">Do You Have a Minute? by Hugh F</a></iframe>
 
 
+
 **adaptive soundtrack aspirations**
+
 videogames with adaptive soundtracks have always fascinated me, so i love doing the same thing with my own music. something as simple as adding a drumbeat onto the song when you enter a new area in the game is so effective in utilising the same song, yet presenting a whole extra layer of art direction. the two soundcloud tracks are examples of an adaptive soundtrack i am working on. 
 
 the challenge for me is figuring out a way to program this into my game designs, as i am yet to do it. 
@@ -38,9 +41,9 @@ the challenge for me is figuring out a way to program this into my game designs,
 
 here is an adaptive track from a game i am making, showcasing the map() function in p5js. the idea is that the 
 player will walk into a different area in the game and the tracks will crossfade one-another to give a change 
-in atmosphere... it is alot of fun!
+in atmosphere... it is alot of fun! 
 
-
+(click it)
 <iframe width="500" height="543"  src="https://editor.p5js.org/hughfuchsen/full/7kXZOHGG4"></iframe>
 
 
