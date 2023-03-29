@@ -43,7 +43,7 @@ here is an adaptive track from a game i am making, showcasing the map() function
 player will walk into a different area in the game and the tracks will crossfade one-another to give a change 
 in atmosphere... it is alot of fun! 
 
-(click it)
+(click it) (sound on)
 <iframe width="500" height="543"  src="https://editor.p5js.org/hughfuchsen/full/7kXZOHGG4"></iframe>
 
 
@@ -51,9 +51,79 @@ in atmosphere... it is alot of fun!
 the map() function is really handy to test the crossfading of the adaptive track. i was always just soloing each track in logic pro, but this allows me to hear the fade! 
 
 ```js
+let beep, beep2;
+let playing = false;
+let slider;
 
+function preload() {
+  beep = loadSound("general1.mp3");
+  beep2 = loadSound("general2.mp3");
+}
 
+function setup() {
+  createCanvas(500, 500);
+  beep.loop();
+  beep2.loop();
+  beep.play();
+  beep2.play();
 
+  slider = createSlider(0, 100, 50);
+  slider.position(200, 250);
+  slider.style("width", "80px");
+
+  colorMode(HSL, 100);
+  rainbow = createImage(width, height);
+  rainbow.loadPixels();
+  for (let i = 0; i < width; i++) {
+    for (let j = 0; j < height; j++) {
+      let h = map(i, 0, width, 0, 100);
+      rainbow.set(i, j, color(h, 100, 70));
+    }
+  }
+  rainbow.updatePixels();
+}
+
+function draw() {
+  background(220);
+  image(rainbow, 0, 0);
+
+  
+// MAP function!!!!
+// syntax: map(value, start1, stop1, start2, stop2, [withinBounds])
+// was able to cross-fade the two volume 
+// values by inverting the start2 and stop2 values from vol2
+
+  let sliderVal = slider.value();
+  let vol1 = map(sliderVal, 0, 100, 1, 0);
+  let vol2 = map(sliderVal, 100, 0, 1, 0);
+
+  beep.amp(vol1);
+  beep2.amp(vol2);
+
+  // sound2.setVolume(vol2);
+
+  //beep.play();
+
+  // let vol = map(mouseY, 0, height, 2, 0);
+  // beep.amp(vol);
+
+  //   var speed = map(mouseX, 0, width, 0, 4);
+  //   beep.rate(speed);
+  //   beep2.rate(speed);
+
+  //   var panning = map(mouseY, 0, width, -1, 1);
+  //   beep.pan(panning);
+  //   beep2.pan(panning);
+}
+
+function mousePressed() {
+  //beep.stop();
+  if (!playing) {
+    beep.play();
+    beep2.play();
+    playing = true;
+  }
+}
 ```
 --- 
 </font>
