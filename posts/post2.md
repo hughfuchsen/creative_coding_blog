@@ -56,6 +56,7 @@ the map() function is really handy to test the crossfading of the adaptive track
 let beep, beep2;
 let playing = false;
 let slider;
+var button;
 
 function preload() {
   beep = loadSound("general1.mp3");
@@ -64,13 +65,9 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
-  beep.loop();
-  beep2.loop();
-  beep.play();
-  beep2.play();
 
   slider = createSlider(0, 100, 50);
-  slider.position(200, 250);
+  slider.position(210, 250);
   slider.style("width", "80px");
 
   colorMode(HSL, 100);
@@ -83,6 +80,10 @@ function setup() {
     }
   }
   rainbow.updatePixels();
+  button = createButton("play :)");
+  button.size(100, 40);
+  button.position(200,300);
+  button.mousePressed(togglePlaying);
 }
 
 function draw() {
@@ -94,24 +95,27 @@ function draw() {
 // syntax: map(value, start1, stop1, start2, stop2, [withinBounds])
 // was able to cross-fade the two volume 
 // values by inverting the start2 and stop2 values from vol2
-
   let sliderVal = slider.value();
-  let vol1 = map(sliderVal, 0, 100, 1, 0);
-  let vol2 = map(sliderVal, 100, 0, 1, 0);
+  let vol1 = map(sliderVal, 0, 100, 0.4, 0);
+  let vol2 = map(sliderVal, 100, 0, 0.4, 0);
 
   beep.amp(vol1);
   beep2.amp(vol2);
-
 }
 
-function mousePressed() {
-  if (!playing) {
+function togglePlaying() {
+  if (!beep.isPlaying()) {
     beep.play();
     beep2.play();
-    playing = true;
+    button.html("stop :o");
+  } else {
+    beep.stop();
+    beep2.stop();
+    button.html("play :)");
   }
 }
 ```
+
 --- 
 </font>
 
