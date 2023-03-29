@@ -87,7 +87,7 @@ function draw() {
   background(220);
   image(rainbow, 0, 0);
 
-  
+
 // MAP function!!!!
 // syntax: map(value, start1, stop1, start2, stop2, [withinBounds])
 // was able to cross-fade the two volume 
@@ -100,24 +100,9 @@ function draw() {
   beep.amp(vol1);
   beep2.amp(vol2);
 
-  // sound2.setVolume(vol2);
-
-  //beep.play();
-
-  // let vol = map(mouseY, 0, height, 2, 0);
-  // beep.amp(vol);
-
-  //   var speed = map(mouseX, 0, width, 0, 4);
-  //   beep.rate(speed);
-  //   beep2.rate(speed);
-
-  //   var panning = map(mouseY, 0, width, -1, 1);
-  //   beep.pan(panning);
-  //   beep2.pan(panning);
 }
 
 function mousePressed() {
-  //beep.stop();
   if (!playing) {
     beep.play();
     beep2.play();
