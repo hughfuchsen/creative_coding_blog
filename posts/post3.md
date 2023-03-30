@@ -3,12 +3,12 @@ title: adventure to the pony zone
 publish_date: 2023-03-28
 disable_html_sanitization: true
 --- 
-<font size="8">a</font><font size="5">game i am currently building has a working title - *adventure to the pony zone*.
-attpz is an open world adventure where the player's purpose is to solve riddles and puzzles in order to find people's. do so will reveal more about the people in the game, and also unlock certain aspects of the adventure.
+<font size="8">a</font><font size="5"> game i am currently building has a working title - *adventure to the pony zone*.
+attpz is an open world adventure where the player's purpose is to solve riddles and puzzles in order to find people's ponies. doing so will reveal more about the people in the game, and also unlock certain aspects of the adventure.
 
 here is a link to a prototype i am currently working on.
 
-[title](https://www.example.com)
+[prototype3](https://sharemygame.com/@hughfuchsen/prototype3)
 
 **scripting player movement in p5js**
 
