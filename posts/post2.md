@@ -47,7 +47,7 @@ the challenge for me is figuring out a way to program this into my game designs,
 
 ◡̈
 
-*here is an adaptive track from a game i am making, showcasing the map() function in p5js.* 
+**here is an adaptive track from a game i am making, showcasing the map() function in p5js.**
 
 the idea is that the player will walk into a different area in the game and the tracks will crossfade one-another to give a change in atmosphere... it is alot of fun! 
 
