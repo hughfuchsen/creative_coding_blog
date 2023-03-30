@@ -3,7 +3,8 @@ title: adventure to the pony zone
 publish_date: 2023-03-30
 disable_html_sanitization: true
 --- 
-<font size="8">a</font><font size="5"> game i am currently building has a working title - *adventure to the pony zone*.
+<font size="8">a</font><font size="5"> game i am currently building has a working title - *adventure to the pony zone*. 
+i am building it in unity.
 attpz is an open world adventure where the player's purpose is to solve riddles and puzzles in order to find people's ponies. doing so will reveal more about the people in the game, and also unlock certain aspects of the adventure.
 
 ![attpz](./images/attpz.png)
@@ -15,7 +16,8 @@ here is a link to a prototype i am currently working on.
 
 **scripting player movement in p5js**
 
-one of the first challenges for me was figuring out the unity program interface, and how c# script (or any computer language for that matter) worked. i am confident moving forward however, because although it is all so daunting, i know that i have come a long way compared to when i started out. 
+one of the first challenges for me was figuring out the unity program interface, and how c# script (or any computer language for that matter) worked. 
+i am confident moving forward however, because although it is all so daunting, i know that i have come a long way compared to when i started out. 
 
 a simple excersise was to find out how to move the character by defining functions and using them in the update() method. 
 in this case, the update() (c#) method is the draw() (p5js) function.
@@ -23,22 +25,34 @@ in this case, the update() (c#) method is the draw() (p5js) function.
 <iframe width="500" height="543" src="https://editor.p5js.org/hughfuchsen/full/mzBUeeYRP"></iframe>
 
 ```js
+// declared variables
 let xpos = 300;
 let ypos = 300;
 let moveSpeed = 5;
 
+// create a canvas for the animation
 function setup() {
   createCanvas(500, 500);
 }
 
+// the update() equivalent to c#
 function draw() {
+  // a pink background
   background("hotpink");
 
-  // draw moving character
+  // the fill() method draws the colour of the 
+  // shape that will be moved
   fill("turquoise");
+  // the ellipse() method draws the 
+  // shape that will be moved. 
+  // note the parametres of the 
+  // x and y positions have been 
+  // declared up top.
   ellipse(xpos, ypos, 75, 75);
 
-  // update moving character
+  // these conditional methods update
+  // the moving shape by incrementing 
+  // +/- speed of movement per rate of frame
   if (movingRight) {
     xpos += moveSpeed;
   }
@@ -53,6 +67,10 @@ function draw() {
   }
 }
 
+// these functions containing conditional statements
+// define which keys are to be pressed/released, 
+// then a true or false boolean is
+// assigned to the if() statements in draw()
 function keyPressed() {
   if (key == "w" || keyCode == UP_ARROW) {
     movingUp = true;
@@ -84,7 +102,9 @@ function keyReleased() {
 }
 ```
 
-a goal of mine is to be able to make my c# code more dry. here is my c# code for player movement at the moment 
+
+**a goal of mine is to be able to make my c# code more dry. here is my c# code for player movement at the moment**
+
 
 ```c#
 using System.Collections;
