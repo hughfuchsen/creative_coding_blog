@@ -6,6 +6,9 @@ disable_html_sanitization: true
 <font size="8">a</font><font size="5"> game i am currently building has a working title - *adventure to the pony zone*.
 attpz is an open world adventure where the player's purpose is to solve riddles and puzzles in order to find people's ponies. doing so will reveal more about the people in the game, and also unlock certain aspects of the adventure.
 
+![attpz](./images/attpz.png)
+
+
 here is a link to a prototype i am currently working on.
 
 [prototype3](https://sharemygame.com/@hughfuchsen/prototype3)
