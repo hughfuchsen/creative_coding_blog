@@ -53,6 +53,8 @@ recently i came upon  <span style="color:orange">*florp farming*</span>, which i
 a really frustrating part of the game is the fact that you need to drag and drop every signle element you want to sell in order to make money.
 
 ![florp farming start page](./images/florp.png)
+[florp farming game link](https://groverburger.itch.io/florpfarming)
+
 
 
 here is a simple p5 example of dragging and dropping. 
