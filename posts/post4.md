@@ -5,7 +5,67 @@ disable_html_sanitization: true
 --- 
 <font size="8">test!</font>
 
-<!doctype html>
+<script>
+  class Shrinker {
+
+    // position specifies the middle of the object
+    // object also needs a size
+    // and a canvas context to draw to
+    constructor (position, size, context) {
+        this.pos = position
+        this.siz = size
+        this.ctx = context
+
+        // we will use these properties to control
+        // the shrinking and growing animation
+        this.active = false
+        this.phase  = 0
+    }
+
+    draw () {
+
+        // if active, increment phase
+        if (this.active) {
+            this.phase += 0.01
+        }
+
+        // if phase is complete
+        // disable object and reset phase
+        if (this.phase > 1) {
+            this.active = false
+            this.phase  = 0
+        }
+
+        // this mathematics creates the envelope
+        // that will shrink / grow the square
+        // double goes from 0 - 2
+        const double = this.phase * 2
+
+        // rev goes from 2 - 0
+        const rev = 2 - double
+
+        // env = whichever one is less
+        // env goes from 0 -> 1 -> 0
+        const env = Math.min (double, rev)
+
+        // mult goes from 1 -> 0 -> 1
+        const mult = 1 - env
+
+        // calculate the size under the envelope
+        const len = this.siz * mult
+
+        // calculate the position under the envelope
+        const x = this.pos.x - (len / 2)
+        const y = this.pos.y - (len / 2)
+
+        // draw the pink square
+        // using the values calculated
+        this.ctx.fillStyle = `hotpink`
+        this.ctx.fillRect (x, y, len, len)
+    }
+}
+</script>
+
 
 <canvas id=onpointermove_example></canvas>
 
@@ -104,7 +164,7 @@ disable_html_sanitization: true
 
 
 
-</html>
+
 
 
 
