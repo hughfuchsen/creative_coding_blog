@@ -5,6 +5,8 @@ disable_html_sanitization: true
 --- 
 <font size="8">test!</font>
 
+<!doctype html>
+
 <canvas id=onpointermove_example></canvas>
 
 <script type=module>
@@ -102,7 +104,7 @@ disable_html_sanitization: true
 
 
 
-
+</html>
 
 
 
