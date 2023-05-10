@@ -6,7 +6,7 @@ disable_html_sanitization: true
 <font>as i begin this blog again, i am reminded of my love for stardew valley. particularly the four seasons in which
 the game is experienced. for that reason, i wanted to make a piece of net art that encapsulated the rainy day that one experiences both in stardew valley.</font>
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=yrRCGNMTTFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yrRCGNMTTFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 
 i first added rain drops (5x5 squares) to float across the screen diagonally from right to left, making sure that the rain would render last, so as to be 'above' all other parts of the screen.
