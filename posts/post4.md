@@ -102,7 +102,7 @@ class RainDrop {
 
   
     // rain
-    const rain = []
+    var rain = []
 
     // define the function that will draw frames
     function draw_frame () {
