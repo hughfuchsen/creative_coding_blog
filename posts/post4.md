@@ -56,7 +56,6 @@ class RainDrop {
     // // append the canvas element to the document body
     // document.body.appendChild (cnv)
 
-    requestAnimationFrame (draw_frame)
 
     // rain
     let rain = []
@@ -87,6 +86,9 @@ class RainDrop {
         requestAnimationFrame (draw_frame)
 
     }
+
+    requestAnimationFrame (draw_frame)
+
 
 
 
