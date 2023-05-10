@@ -114,12 +114,12 @@ class RainDrop {
 
         //raindrops
 
-        // rain.push(new RainDrop())
+        rain.push(new RainDrop())
 
-        // for (droplet of rain) {
-        //     droplet.update()
-        //     // droplet.recursiveWaterRender(1)
-        // }
+        for (droplet of rain) {
+            droplet.update()
+            // droplet.recursiveWaterRender(1)
+        }
 
         // // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
         // // console.log(rain.length)
