@@ -18,10 +18,10 @@ class RainDrop {
     constructor() {
         // variable x and y locations to render the raindrops randomly OFF the canvas, 
         // so they can 'fall' over the canvas
-        let x = Math.random() * (cnv.width + 500)
-        let y = Math.random() * -110
+        const x = Math.random() * (cnv.width + 500)
+        const y = Math.random() * -110
         // randomize raindrop size parameter between a diametre of 0 and 7px
-        let hw = Math.random() * 7
+        const hw = Math.random() * 7
         this.pos = {x, y, hw}
         // diagonal downward velocity from right to left
         this.vel = {x: -5, y: 7}
@@ -49,9 +49,9 @@ class RainDrop {
 class RainDrop {
 
         constructor() {
-            let x = Math.random() * (cnv.width + 500)
-            let y = Math.random() * -100 - 10
-            let hw = Math.random() * 7
+            const x = Math.random() * (cnv.width + 500)
+            const y = Math.random() * -100 - 10
+            const hw = Math.random() * 7
             this.pos = {x, y, hw}
             this.vel = {x: -5, y: 7}
             this.acc = {x: 0, y: 0}
