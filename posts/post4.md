@@ -49,12 +49,9 @@ class RainDrop {
 class RainDrop {
 
         constructor() {
-            // let x = Math.random() * (cnv.width + 500)
-            // let y = Math.random() * -100 - 10
-            let x = cnv.width/2
-            let y = cnv.height/2
-            // let hw = Math.random() * 7
-            let hw = 70
+            let x = Math.random() * (cnv.width + 500)
+            let y = Math.random() * -100 - 10
+            let hw = Math.random() * 7
             this.pos = {x, y, hw}
             this.vel = {x: -5, y: 7}
             this.acc = {x: 0, y: 0}
@@ -110,7 +107,7 @@ class RainDrop {
     // define the function that will draw frames
     function draw_frame () {
 
-        background('green')    
+        background('red')    
 
         //raindrops
 
