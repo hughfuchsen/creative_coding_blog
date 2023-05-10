@@ -43,11 +43,8 @@ class RainDrop {
 ```
 
 
-<canvas id=rainDropExample></canvas>
 
-<script type=module>
-
-
+<script>
 
 class RainDrop {
 
@@ -90,6 +87,11 @@ class RainDrop {
 
     }
 
+</script>
+
+<canvas id=rainDropExample></canvas>
+
+<script type=module>
 
     const cnv = document.getElementById (`rainDropExample`)
     cnv.width = cnv.parentNode.scrollWidth
