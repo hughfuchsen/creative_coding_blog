@@ -10,11 +10,14 @@ the game is experienced. for that reason, i wanted to make a piece of net art th
 <br>
 
 i first added rain drops (5x5 squares) to float across the screen diagonally from right to left, making sure that the rain would render last, so as to be 'above' all other parts of the screen.
+
+
 ```js
 class RainDrop {
 
     constructor() {
-        // variable x and y locations to render the raindrops randomly OFF the canvas, so they can 'fall' over the canvas
+        // variable x and y locations to render the raindrops randomly OFF the canvas, 
+        // so they can 'fall' over the canvas
         let x = Math.random() * (cnv.width + 500)
         let y = Math.random() * -110
         // randomize raindrop size parameter between a diametre of 0 and 7px
@@ -73,8 +76,7 @@ class RainDrop {
 
         for (droplet of rain) {
             droplet.update()
-            droplet.recursiveWaterRender(1)
-            
+            // droplet.recursiveWaterRender(1)
         }
 
         // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
@@ -114,18 +116,18 @@ class RainDrop {
             ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
         }
 
-        recursiveWaterRender(tailFactor) {
+        // recursiveWaterRender(tailFactor) {
 
-                ctx.fillStyle = 'skyblue'
+        //         ctx.fillStyle = 'skyblue'
 
-                ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
+        //         ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
 
-                if (tailFactor > 20) return
+        //         if (tailFactor > 20) return
 
-                this.recursiveWaterRender(tailFactor + 5)
+        //         this.recursiveWaterRender(tailFactor + 5)
 
             
-        }
+        // }
 
         offScreen() {
             return (this.pos.y > cnv.height + this.pos.hw);
