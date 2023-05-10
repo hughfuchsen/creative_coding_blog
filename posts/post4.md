@@ -3,7 +3,7 @@ title: recursion!
 publish_date: 2023-05-10
 disable_html_sanitization: true
 --- 
-<font size="8">as i begin this blog again, i am reminded of my love for stardew valley. particularly the four seasons in which
+<font>as i begin this blog again, i am reminded of my love for stardew valley. particularly the four seasons in which
 the game is experienced. for that reason, i wanted to make a piece of net art that encapsulated the rainy day that one experiences both in stardew valley.</font>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yrRCGNMTTFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
