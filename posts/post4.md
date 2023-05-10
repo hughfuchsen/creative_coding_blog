@@ -118,6 +118,7 @@ class RainDrop {
 
         for (droplet of rain) {
             droplet.update()
+            ctx.fillStyle = 'skyblue'
             droplet.renderWater()
 
             // droplet.recursiveWaterRender(1)
