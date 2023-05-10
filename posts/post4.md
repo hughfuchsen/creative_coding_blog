@@ -53,15 +53,8 @@ class RainDrop {
 
     const ctx = cnv.getContext ('2d')
 
-    // calculating the dimension
-    // for the Shrinker objects
-    // the aspect ratio is 16:9
-    // so this will act as both
-    // the width and height
-    const w = cnv.width / 16
-
-    // append the canvas element to the document body
-    document.body.appendChild (cnv)
+    // // append the canvas element to the document body
+    // document.body.appendChild (cnv)
 
     requestAnimationFrame (draw_frame)
 
