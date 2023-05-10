@@ -46,46 +46,46 @@ class RainDrop {
 
 <script>
 
-class RainDrop {
+// class RainDrop {
 
-        constructor() {
-            let x = Math.random() * (cnv.width + 500)
-            let y = Math.random() * -100 - 10
-            let hw = Math.random() * 7
-            this.pos = {x, y, hw}
-            this.vel = {x: -5, y: 7}
-            this.acc = {x: 0, y: 0}
-        }
+//         constructor() {
+//             let x = Math.random() * (cnv.width + 500)
+//             let y = Math.random() * -100 - 10
+//             let hw = Math.random() * 7
+//             this.pos = {x, y, hw}
+//             this.vel = {x: -5, y: 7}
+//             this.acc = {x: 0, y: 0}
+//         }
 
-        update () {
-            this.pos.x 
-            this.pos.y 
-            this.pos.x += this.vel.x
-            this.pos.y += this.vel.y
-        }
+//         update () {
+//             this.pos.x 
+//             this.pos.y 
+//             this.pos.x += this.vel.x
+//             this.pos.y += this.vel.y
+//         }
 
-        renderWater() {
-            ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
-        }
+//         renderWater() {
+//             ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
+//         }
 
-        // recursiveWaterRender(tailFactor) {
+//         // recursiveWaterRender(tailFactor) {
 
-        //         ctx.fillStyle = 'skyblue'
+//         //         ctx.fillStyle = 'skyblue'
 
-        //         ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
+//         //         ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
 
-        //         if (tailFactor > 20) return
+//         //         if (tailFactor > 20) return
 
-        //         this.recursiveWaterRender(tailFactor + 5)
+//         //         this.recursiveWaterRender(tailFactor + 5)
 
             
-        // }
+//         // }
 
-        offScreen() {
-            return (this.pos.y > cnv.height + this.pos.hw);
-        }
+//         offScreen() {
+//             return (this.pos.y > cnv.height + this.pos.hw);
+//         }
 
-    }
+//     }
 
 </script>
 
@@ -105,7 +105,7 @@ class RainDrop {
 
 
     // rain
-    let rain = []
+    // let rain = []
 
     // define the function that will draw frames
     function draw_frame () {
@@ -114,20 +114,20 @@ class RainDrop {
 
         //raindrops
 
-        rain.push(new RainDrop())
+        // rain.push(new RainDrop())
 
-        for (droplet of rain) {
-            droplet.update()
-            // droplet.recursiveWaterRender(1)
-        }
+        // for (droplet of rain) {
+        //     droplet.update()
+        //     // droplet.recursiveWaterRender(1)
+        // }
 
-        // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
-        // console.log(rain.length)
-        for (let i = rain.length - 1; i >= 0; i--) {
-            if (rain[i].offScreen()) {
-                rain.splice(i, 1);
-            }
-        }
+        // // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
+        // // console.log(rain.length)
+        // for (let i = rain.length - 1; i >= 0; i--) {
+        //     if (rain[i].offScreen()) {
+        //         rain.splice(i, 1);
+        //     }
+        // }
 
         // recursively call itself for ongoing animation
         requestAnimationFrame (draw_frame)
@@ -136,7 +136,10 @@ class RainDrop {
 
         requestAnimationFrame (draw_frame)
 
-
+    function background (c) {
+    ctx.fillStyle = c
+    ctx.fillRect (0, 0, cnv.width, cnv.height)        
+    }   
 
 
     
