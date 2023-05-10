@@ -105,7 +105,7 @@ class RainDrop {
 
 
     // rain
-    // let rain = []
+    let rain = []
 
     // define the function that will draw frames
     function draw_frame () {
@@ -118,6 +118,8 @@ class RainDrop {
 
         for (droplet of rain) {
             droplet.update()
+            droplet.renderWater()
+
             // droplet.recursiveWaterRender(1)
         }
 
