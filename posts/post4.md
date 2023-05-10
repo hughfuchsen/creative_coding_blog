@@ -100,6 +100,9 @@ class RainDrop {
 
     const ctx = cnv.getContext ('2d')
 
+    // // append the canvas element to the document body
+    // document.body.appendChild (cnv)
+
 
     // rain
     let rain = []
