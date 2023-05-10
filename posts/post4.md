@@ -49,8 +49,8 @@ class RainDrop {
 class RainDrop {
 
         constructor() {
-            let x = Math.random() * (cnv.width + 500)
-            let y = Math.random() * -100 - 10
+            let x = Math.random() * (cnv.width)
+            let y = Math.random() * (cnv.width)
             let hw = Math.random() * 7
             this.pos = {x, y, hw}
             this.vel = {x: -5, y: 7}
