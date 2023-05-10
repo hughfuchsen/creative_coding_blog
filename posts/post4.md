@@ -49,8 +49,8 @@ class RainDrop {
 class RainDrop {
 
         constructor() {
-            let x = Math.random() * (cnv.width)
-            let y = Math.random() * (cnv.width)
+            let x = Math.random() * (cnv.width + 500)
+            let y = Math.random() * -100 - 10
             let hw = Math.random() * 7
             this.pos = {x, y, hw}
             this.vel = {x: -5, y: 7}
@@ -68,18 +68,18 @@ class RainDrop {
             ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
         }
 
-        // recursiveWaterRender(tailFactor) {
+        recursiveWaterRender(tailFactor) {
 
-        //         ctx.fillStyle = 'skyblue'
+                ctx.fillStyle = 'skyblue'
 
-        //         ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
+                ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
 
-        //         if (tailFactor > 20) return
+                if (tailFactor > 20) return
 
-        //         this.recursiveWaterRender(tailFactor + 5)
+                this.recursiveWaterRender(tailFactor + 5)
 
             
-        // }
+        }
 
         offScreen() {
             return (this.pos.y > cnv.height + this.pos.hw);
@@ -120,7 +120,7 @@ class RainDrop {
             droplet.update()
             droplet.renderWater()
 
-            // droplet.recursiveWaterRender(1)
+            droplet.recursiveWaterRender(1)
         }
 
         // // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
@@ -136,7 +136,7 @@ class RainDrop {
 
     }
 
-        requestAnimationFrame (draw_frame)
+        // requestAnimationFrame (draw_frame)
 
     function background (c) {
     ctx.fillStyle = c
