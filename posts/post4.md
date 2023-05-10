@@ -65,6 +65,7 @@ class RainDrop {
         }
 
         renderWater() {
+            ctx.fillStyle = 'blue'
             ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
         }
 
@@ -110,7 +111,7 @@ class RainDrop {
     // define the function that will draw frames
     function draw_frame () {
 
-        background('green')    
+        // background('green')    
 
         //raindrops
 
