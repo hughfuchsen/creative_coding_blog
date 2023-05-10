@@ -60,6 +60,9 @@ class RainDrop {
     // the width and height
     const w = cnv.width / 16
 
+    // append the canvas element to the document body
+    document.body.appendChild (cnv)
+
     requestAnimationFrame (draw_frame)
 
     // rain
