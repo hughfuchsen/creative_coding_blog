@@ -107,7 +107,7 @@ class RainDrop {
     // define the function that will draw frames
     function draw_frame () {
 
-        background('blue')    
+        background('green')    
 
         //raindrops
 
