@@ -43,6 +43,7 @@ function build_wall_layer (x_off_set, y_off_set, direction, wall_height, wall_le
 ```
 
 <font>
+        i wanted to add one more thing to the illustration to fill out the bottom left corner, so i drew a pixelated hills hoist. with the assitance of chat GPT i figured out how to animate my spritesheet and make the clothesline spin. the hills hoist was the only element not illustrated with .js. 
 </font>
 
 
