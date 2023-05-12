@@ -42,6 +42,25 @@ class RainDrop {
     }
 ```
 
+to make the raindrop shape look like it was 'flying' through the air, i turned ```renderWater()``` into a recursive function that drew the raindrop upon the droplet(corner of the square) at a smaller height and width. the function was then renamed, ' ```recursiveWaterRender()``` '. i used the ```tailFactor``` variable in a 
+conditional function to stop(```return```) the recursion after a certain amount of recursion cycles, so as not to receive an error. 
+```js
+        recursiveWaterRender(tailFactor) {
+
+                ctx.fillStyle = 'skyblue'
+
+                ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
+
+                if (tailFactor > 20) return
+
+                this.recursiveWaterRender(tailFactor + 5) 
+        }
+
+        offScreen() {
+            return (this.pos.y > cnv.height + this.pos.hw);
+        }
+
+```
 
 
 <script>
