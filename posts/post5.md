@@ -5,10 +5,54 @@ disable_html_sanitization: true
 --- 
 <font>designing a rainy day with javascript was going well. i wanted to have a go at designing some sort of sythesised wind the audio api. 
         taking code from thomas capogreco's blog on web audio api synthesis, i was able to create a soundscape that fit well with the saturated isometric pixel art design
-        first i made an audio context, and linked that context with a html button nested in a ```html<div>``` element in order to start and stop the function.</font>
+        first i made an audio context, and linked that context with a html button nested in a ```<div>``` element in order to start and stop the function.</font>
 
 ```js
+        // get and suspend audio context
+        const audio_context = new AudioContext ()
+        audio_context.suspend ()
+  
+    
+        // this is the async click handler function 
+        async function init_audio () {
+    
+            // wait for audio context to resume
+            await audio_context.resume ()
+        }
+    
+        // get the button and store it in a variable
+        const btn = document.getElementById ('tone_switch')
+        btn.innerText = 'Press for wind sound!' // button text!
+        btn.value = 'off'                 // give it a value
 
+        // declare a function for toggling the sound
+        function toggle_sound () {
+            // if button value is 'off'
+            if (btn.value == 'off') {
+
+                // set the gain to 0.1
+                amp_node.gain.value = 0.1
+
+                // set the value to 'on'
+                btn.value = 'on'
+
+                // change the text
+                btn.innerText = 'Press to stop!'
+            }
+
+          // if button value is `on`
+          else if (btn.value = 'on') {
+
+              // set the gain to 0
+              amp_node.gain.value = 0
+
+              // set the value to `off`
+              btn.value = 'off'
+
+              // change the text
+              btn.innerText = 'Press for wind sound!'
+          }
+      }
 ```
 <script>
   class Shrinker {
