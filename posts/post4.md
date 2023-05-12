@@ -41,25 +41,55 @@ class RainDrop {
         ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
     }
 ```
-
 to make the raindrop shape look like it was 'flying' through the air, i turned ```renderWater()``` into a recursive function that drew the raindrop upon the droplet(corner of the square) at a smaller height and width. the function was then renamed, ' ```recursiveWaterRender()``` '. i used the ```tailFactor``` variable in a 
 conditional function to stop(```return```) the recursion after a certain amount of recursion cycles, so as not to receive an error. 
 ```js
         recursiveWaterRender(tailFactor) {
 
+                // assign a colour the the square
                 ctx.fillStyle = 'skyblue'
-
+                // draw a square and set the position to the upper right hand side of the square.
+                // use tailFactor as a parametre for controlling recursion amount
                 ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
 
+                // condition the recursion to end once tailFactor has reached a value of over 20
                 if (tailFactor > 20) return
 
+                // if tailFactor is not yet above the value of 20, call this function once more inside itself, making a
+                    //smaller square to the upper right hand corner of the previous square 
                 this.recursiveWaterRender(tailFactor + 5) 
         }
 
+        // for the following functionality offScreen() function, refer to the code at the bottom of this page
+        // call this boolean function inside  once the rain droplet has reached a point that is off the canvas, so as to not    cause the browser to eventually start panting
         offScreen() {
             return (this.pos.y > cnv.height + this.pos.hw);
         }
 
+```
+```js
+    //raindrops
+
+    rain.push(new RainDrop())
+
+    for (droplet of rain) {
+        droplet.update()
+        droplet.recursiveWaterRender(1)
+        
+    }
+
+    // check to see if the amounts of RainDrops are not growing, i.e. slowing the computer
+    //console.log(rain.length)
+
+
+    for (let i = rain.length - 1; i >= 0; i--) {
+        if (rain[i].offScreen()) {
+            rain.splice(i, 1);
+        }
+    }
+
+    // recursively call itself for ongoing animation
+    requestAnimationFrame (draw_frame)
 ```
 
 
