@@ -64,7 +64,9 @@ disable_html_sanitization: true
 
 <font>    
     then, i created the gain node and connected it to five different sine wave ocsillator nodes of varying frequencies. the varying freqs. were made to encapsulate 'windy overtones' by using the setValueAtTime() function.
+</font>    
     <br> 
+<font>      
     different frequencies and time values would be eventually calculated using the linearRampToValueAtTime() function, later on.
 </font>
 
@@ -121,12 +123,18 @@ disable_html_sanitization: true
 ```
 <font>    
     finally, i created a new variable that would store a random oscillator frequency between 160 and 180 Hz - giving the wind tones a 20Hz range.
+</font>
     <br>
+<font> 
     for all of the oscillator nodes, i used the newFrequency variable, plus a certain value in order to scale multiple tones upon one-another. then i set these variable values as parametres to the linearRampToValueAtTime() function.
+</font>
     <br>
+<font>     
     all of this code was put inside the function called updateFrequency(), which i could then apply as a parametre to the 
     setInterval() function. the wind frequency was then able to slide to a random random value at a random time interval!
+</font>
     <br>
+</font>
     this was my attempt at generating one of natures most beautiful, yet chaotic and annoying phenomenons...
 </font>
 
