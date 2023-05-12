@@ -99,8 +99,9 @@ function draw_frame () {
     requestAnimationFrame (draw_frame)
 }
 ```
-
-
+<font>
+        for the smoke leaving the chimney, i applied the same principal of the raindrops, but did not use recursion, and removed the smoke particles at the top of the screen. velocities and square rendering positions were also adjusted for the narrow upward smoke movement
+</font>
 
 
 

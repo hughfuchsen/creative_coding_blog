@@ -43,18 +43,9 @@ function build_wall_layer (x_off_set, y_off_set, direction, wall_height, wall_le
 ```
 
 <font>
-        
 </font>
 
-<script>
-  
-</script>
 
-
-
-<script type=module>
-   
-</script>
 
 
 
