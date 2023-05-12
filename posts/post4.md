@@ -70,18 +70,16 @@ class RainDrop {
             ctx.fillRect(this.pos.x, this.pos.y, this.pos.hw, this.pos.hw)
         }
 
-        // recursiveWaterRender(tailFactor) {
+        recursiveWaterRender(tailFactor) {
 
-        //         ctx.fillStyle = 'skyblue'
+                ctx.fillStyle = 'skyblue'
 
-        //         ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
+                ctx.fillRect(this.pos.x + (this.pos.hw + tailFactor), this.pos.y - (this.pos.hw + tailFactor), this.pos.hw - tailFactor/5, this.pos.hw - tailFactor/5)
 
-        //         if (tailFactor > 20) return
+                if (tailFactor > 20) return
 
-        //         this.recursiveWaterRender(tailFactor + 5)
-
-            
-        // }
+                this.recursiveWaterRender(tailFactor + 5) 
+        }
 
         offScreen() {
             return (this.pos.y > cnv.height + this.pos.hw);
