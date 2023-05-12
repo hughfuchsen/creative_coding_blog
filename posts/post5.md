@@ -1,10 +1,15 @@
 ---
 title: audio api!
-publish_date: 2023-04-28
+publish_date: 2023-05-10
 disable_html_sanitization: true
 --- 
-<font size="8">test!</font>
+<font>designing a rainy day with javascript was going well. i wanted to have a go at designing some sort of sythesised wind the audio api. 
+        taking code from thomas capogreco's blog on web audio api synthesis, i was able to create a soundscape that fit well with the saturated isometric pixel art design
+        first i made an audio context, and linked that context with a html button nested in a ```html<div>``` element in order to start and stop the function.</font>
 
+```js
+
+```
 <script>
   class Shrinker {
 
