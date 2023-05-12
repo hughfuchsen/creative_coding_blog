@@ -9,11 +9,9 @@ disable_html_sanitization: true
 </font>
 <br>
 <font>    
-    first i made an audio context, and linked that context with a html button nested in a 
-    ```
-    <div>
-    ``` 
-    element in order to start and stop the function. the amp_node variable is discussed in the next paragraph.
+    first i made an audio context, and linked that context with a html button nested in a </font>
+    ```<div>```
+   <font> element in order to start and stop the function. the amp_node variable is discussed in the next paragraph.
 </font>
 
 ```js
