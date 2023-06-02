@@ -1,5 +1,5 @@
 ---
-title: sprite collisioin
+title: sprite collision
 publish_date: 2023-06-02
 disable_html_sanitization: true
 --- 
