@@ -1,6 +1,6 @@
 ---
-title: isometric pixel art!
-publish_date: 2023-05-10
+title: sprite animation in .js
+publish_date: 2023-06-02
 disable_html_sanitization: true
 --- 
 <font>
@@ -11,7 +11,7 @@ disable_html_sanitization: true
 ![pixel art foundation](./images/runforveg.gif)
 
 <font>
-        first, i made a character class
+        first, i made a character object
 </font>
 
 ```js
@@ -71,6 +71,8 @@ class Character {
 let animationRunning = true; // 
 
 const character1 = new Character('images/clayAnim.png', 160, 320, cnv.width / 10, cnv.height / 3 * 2 + (cnv.height));
+//instantiate the character object
+
 
 
 function draw_frame() {// define the function that will draw frames
@@ -87,6 +89,7 @@ function draw_frame() {// define the function that will draw frames
 }
 
 ```
+
 
 
 
